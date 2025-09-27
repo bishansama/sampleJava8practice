@@ -175,4 +175,15 @@ public class SimpleCacheWithExpiry<K, V> {
         public int getTotalEntries() { return totalEntries; }
         public int getExpiredEntries() { return totalEntries - activeEntries; }
     }
+
+    public static void main(String[] args) {    
+        SimpleCacheWithExpiry<String, String> cache = new SimpleCacheWithExpiry<>(1000, 300);
+        cache.put("key1", "value1");
+        cache.put("key2", "value2", 60 * 24);
+        cache.put("key3", "value3");
+        System.out.println(cache.get("key1"));
+        System.out.println(cache.get("key2"));
+        System.out.println(cache.get("key3"));
+    }
 }
+        
