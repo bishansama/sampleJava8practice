@@ -4,7 +4,7 @@ public class Test {
         main(input);
     }
 
-
+    
     public static  void reverseSimple(String input) {
         if (input == null || input.length() <= 1) {
             System.out.println("Error: Input is null or empty");
