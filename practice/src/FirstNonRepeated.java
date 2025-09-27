@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 public class FirstNonRepeated{
     public static void main(String args[]) {
-        String input = "Java articles are Awesome";
+        String input = "Java articles are Awesomesasfsfsfdsf";
 
         Character result = input.chars() // Stream of String
                 .mapToObj(s -> Character.toLowerCase((char) s)) // First convert to Character object and then to lowercase
